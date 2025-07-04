@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', serif; 
+    line-height: 1.6;
+    color: #163020; 
+}
+
+
+.btn-primary {
+    background: #729762; 
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: none; 
+}
+
+.btn-primary:hover {
+    background: #658147; 
+    transform: translateY(-2px);
+}
+
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef0e5; 
+}
+
+.login-form-container {
+    background: #e9e8e4;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form-container h2 {
+    text-align: center;
+    color: #163020;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #658147; 
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #d1d1d1; 
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background-color: #eef0e5;
+    color: #163020;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #729762; 
+}
+
+.login-form-container button {
+    width: 100%;
+}
+
+.login-form-container button:disabled {
+    background: #b0b0b0; 
+    cursor: not-allowed;
+    transform: none;
+}
