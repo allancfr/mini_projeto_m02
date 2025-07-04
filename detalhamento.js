@@ -25,17 +25,17 @@ document.addEventListener('DOMContentLoaded', async function() {
 
         switch (tipoParceiroUpper) {
             case 'ECO': 
-                avatarSrc = 'images/eco.png'; 
+                avatarSrc = 'img/eco.png'; 
                 break;
             case 'COO': 
-                avatarSrc = 'images/coop.png'; 
+                avatarSrc = 'img/coop.png'; 
                 break;
             case 'PEV':
             case 'PEVS':
-                avatarSrc = 'images/pev.png'; 
+                avatarSrc = 'img/pev.png'; 
                 break;
             default: 
-                avatarSrc = 'images/default.png';
+                avatarSrc = 'img/default.png';
         }
 
         const date = partner.dataCriacao ? new Date(partner.dataCriacao).toLocaleDateString('pt-BR') : 'Data não disponível';
