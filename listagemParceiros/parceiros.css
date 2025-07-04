@@ -1,0 +1,89 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #eef0e5;
+  margin: 0;
+  padding: 2rem;
+  color: #163020;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #163020;
+}
+
+#filtrar {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#filtrar input {
+  padding: 1rem 1.2rem;
+  width: 380px;
+  border: 1px solid #658147;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+#filtrar button {
+  padding: 1rem 1.6rem;
+  font-size: 1rem;
+  background-color: #658147;
+  color: #fff;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+#filtrar button:hover {
+  background-color: #729762;
+  transition: background-color 0.3s ease;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #e9e8e4;
+  border: 2px solid #729762;
+  border-radius: 12px;
+  padding: 20px;
+  width: 230px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card:hover {
+  border-color: #658147;
+  transform: scale(1.02);
+}
+
+.avatar img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.mensagem-vazia {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: #658147;
+  font-weight: 500;
+}
+
+.mensagem-vazia img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
