@@ -9,7 +9,6 @@
 body {
   font-family: "Roboto", serif;
   line-height: 1.5;
-  color: #333;
 }
 
 .container {
@@ -89,7 +88,7 @@ section {
 
 .start-content p {
   font-size: 1.2rem;
-  color: black;
+  color: #163020;
   margin-bottom: 2rem;
   max-width: 600px;
   margin-left: auto;
@@ -129,7 +128,7 @@ section {
   font-size: 1.3rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: black;
+  color: #163020;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -137,6 +136,7 @@ section {
 
 .impact-item p {
   text-align: center;
+  color: #163020;
 }
 
 .ods-cards,
