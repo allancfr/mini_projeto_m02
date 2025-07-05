@@ -8,13 +8,13 @@ let listaParceiros = [];
 function getAvatar(tipo) {
   switch (tipo.toUpperCase()) {
     case "ECO":
-      return "images/eco.png";
+      return "img/eco.png";
     case "COO":
-      return "images/coop.png";
+      return "img/coop.png";
     case "PEV":
-      return "images/pev.png";
+      return "img/pev.png";
     default:
-      return "images/default.png";
+      return "img/default.png";
   }
 }
 
@@ -30,8 +30,9 @@ function criarCard(parceiro) {
   <p><strong>Data de Registro:</strong> ${new Date(parceiro.dataCriacao).toLocaleDateString()}</p>
 `;
   card.addEventListener("click", () => {
-    window.location.href = `detalhes.html?id=${parceiro.id}`;
-  });
+  localStorage.setItem("selectedPartnerId", parceiro.id);
+  window.location.href = "detalhamento.html";
+});
   return card;
 }
 
@@ -41,7 +42,7 @@ function renderizarCards(lista) {
 if (lista.length === 0) {
   container.innerHTML = `
     <div class="mensagem-vazia">
-      <img src="images/notfound.png" alt="Nenhum resultado encontrado" />
+      <img src="img/notfound.png" alt="Nenhum resultado encontrado" />
       <p>Nenhum parceiro encontrado para a busca.</p>
     </div>
   `;
