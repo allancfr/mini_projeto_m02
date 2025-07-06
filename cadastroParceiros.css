@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    font-family: Roboto, serif;
-    background-color: #eef0e5;
+    background: #ffffff;
+    font-family: "Roboto", serif;
 }
 
 form{
-    background: #eef0e5;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -18,14 +18,17 @@ form{
 }
 
 label{
-    color: #163020;
-    margin-top: 10px;
+    color: #658147;
+    font-weight: bold;
+    margin-top: 8px;
     margin-bottom: 10px;
 }
 
 legend{
     margin-bottom: 10px;
     text-decoration: none;
+    color: #163020;
+    font-weight: bold;
 }
 
 fieldset{
@@ -33,6 +36,48 @@ fieldset{
     border-radius: 5px;
     margin: 10px 0 2px 0;
     padding: 12px 10px 12px 10px;
-    background-color: #eef0e5;
+    background-color: #ffffff;
 }
 
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+select{
+    width: 100%;
+    padding: 9px 7px;
+    border: 1px solid #163020;
+    border-radius: 4px;
+    color: #658147;
+    margin-bottom: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: 0.2s;
+
+}
+
+.residuos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    margin-top: 1px;
+}
+
+.residuos label{
+    margin-right: 0;
+    min-width: 145px;
+    cursor: pointer;
+}
+
+button{
+    background: #658147;
+    margin-top: 10px;
+    border: 1px solid #163020;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+button:hover{
+    background: #163020;
+    cursor: pointer;
+}

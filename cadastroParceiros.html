@@ -4,41 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="cadastroParceiros.js"></script>
+     <script src="cadastroParceiros.js" defer></script>
     <link rel="stylesheet" href="cadastroParceiros.css">
-
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
     <title>Document</title>
 </head>
 
 <body>
-    <form>
-
+    <form id="formulario">
         <fieldset>
-
             <legend>Dados do parceiro</legend>
-            <label for="NomeParceiro">Nome do parceiro</label>
-            <input type="text" id="NomeParceiro">
+            <label for="nome">Nome do parceiro</label>
+            <input type="text" id="nome" name="nome" required>
 
-            <label for="TipoParceiro">Tipo de parceiro</label>
-            <select id="TipoParceiro">
-                <option value="1">Ecopontos (ECO)</option>
-                <option value="2">Cooperativas (COO)</option>
-                <option value="3">Ponto de Entrega Voluntária (PEV)</option>
+            <label for="tipo">Tipo de parceiro</label>
+            <select id="tipo" name="tipo" required>
+                <option value="">Selecione</option>
+                <option value="ECO">Ecopontos (ECO)</option>
+                <option value="COO">Cooperativas (COO)</option>
+                <option value="PEV">Ponto de Entrega Voluntária (PEV)</option>
             </select>
 
-            <label>Responsável pelo parceiro</label>
-            <input type="text" id="NomeResponsavel">
+            <label for="responsavel">Responsável pelo parceiro</label>
+            <input type="text" id="responsavel" name="responsavel" required>
 
-            <label>Telefone do Responsável</label>
-            <input type="tel" id="NomeResponsavel">
+            <label for="telefone">Telefone do Responsável</label>
+            <input type="tel" id="telefone" name="telefone" required>
 
-            <label>Email do Responsável</label>
-            <input type="email" id="NomeResponsavel">
+            <label for="email">Email do Responsável</label>
+            <input type="email" id="email" name="email">
 
         </fieldset>
 
@@ -48,29 +45,30 @@
             <input type="text" id="rua" name="rua" required>
 
             <label for="numero">Número:</label>
-            <input type="text" id="numero">
+            <input type="number" id="numero" name="numero" required>
 
             <label for="bairro">Bairro:</label>
-            <input type="text" id="bairro">
+            <input type="text" id="bairro" name="bairro" required>
         </fieldset>
 
         <fieldset>
-            <legend>Tipos de resíduos aceitos:</legend>
-            <div class="checkbox-group">
-                <label><input type="checkbox" name="residuos[]" value="Papel"> Papel</label>
-                <label><input type="checkbox" name="residuos[]" value="Plástico"> Plástico</label>
-                <label><input type="checkbox" name="residuos[]" value="Vidro"> Vidro</label>
-                <label><input type="checkbox" name="residuos[]" value="Metal"> Metal</label>
-                <label><input type="checkbox" name="residuos[]" value="Óleo de cozinha"> Óleo de cozinha</label>
-                <label><input type="checkbox" name="residuos[]" value="Pilhas e baterias"> Pilhas e baterias</label>
-                <label><input type="checkbox" name="residuos[]" value="Eletrônicos"> Eletrônicos</label>
-                <label><input type="checkbox" name="residuos[]" value="Roupas"> Roupas</label>
-                <label><input type="checkbox" name="residuos[]" value="Outros"> Outros</label>
+            <legend>Tipos de resíduos aceitos</legend>
+            <div class="residuos">
+                <label><input type="checkbox" id="papel"> Papel</label>
+                <label><input type="checkbox" id="plastico"> Plástico</label>
+                <label><input type="checkbox" id="vidro"> Vidro</label>
+                <label><input type="checkbox" id="metal"> Metal</label>
+                <label><input type="checkbox" id="oleoCozinha"> Óleo de cozinha</label>
+                <label><input type="checkbox" id="pilhasBaterias"> Pilhas e baterias</label>
+                <label><input type="checkbox" id="eletronico"> Eletrônicos</label>
+                <label><input type="checkbox" id="roupa"> Roupas</label>
+                <label><input type="checkbox" id="outros"> Outros</label>
+                
             </div>
         </fieldset>
 
+        <button type="submit">Enviar</button>
     </form>
-
+   
 </body>
-
 </html>
