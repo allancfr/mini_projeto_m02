@@ -49,15 +49,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const outros = document.getElementById("outros").checked;
 
     const dados = {
-      nome: nome,
-      tipo: tipo,
-      responsavel: responsavel,
-      telefone: telefone,
-      email: email,
+      nomeParceiro: nome,
+      tipoParceiro: tipo,
+      responsavelParceiro: responsavel,
+      telResponsavel: telefone,
+      emailResponsavel: email,
       rua: rua,
       numero: numero,
       bairro: bairro,
-      residuos: [],
+
+      papel: papel,
+      plastico: plastico,
+      vidro: vidro,
+      metal: metal,
+      oleoCozinha: oleoCozinha,
+      pilhaBateria: pilhasBaterias,
+      eletronico: eletronico,
+      roupa: roupa,
+      outros: outros,
     };
 
     const apiUrl =
