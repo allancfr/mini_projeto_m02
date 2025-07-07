@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     const partnerId = localStorage.getItem('selectedPartnerId');
     if (!partnerId) {
-        window.location.href = 'listagem.html';
+        window.location.href = 'parceiros.html';
         return;
     }
 
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         `;
         
         document.getElementById('back-button').addEventListener('click', () => {
-            window.location.href = 'listagem.html';
+            window.location.href = 'parceiros.html';
         });
     }
 });
