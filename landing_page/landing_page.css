@@ -215,6 +215,20 @@ section {
   color: #729762;
 }
 
+.action-item-btn {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  background-color: #729762;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.action-item-btn:hover {
+  background-color: #163020;
+}
+
 .ods-card h3 {
   font-size: 1.5rem;
   color: white;
@@ -231,11 +245,108 @@ section {
   font-size: 0.9rem;
 }
 
+#cadastrar {
+  display: none;
+}
+
+#cadastrar-btn {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 2px solid #163020;
+  background-color: #729762;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 1000px;
+}
+
+#cadastrar-btn:hover {
+  background-color: #163020;
+}
+
+/*form*/
+form {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px 36px 20px 36px;
+  border-radius: 15px;
+  box-shadow: 0 4px 18px #2e2e2e;
+  max-width: 80%;
+  margin: 40px auto;
+}
+
+label {
+  color: #658147;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+legend {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #163020;
+  font-weight: bold;
+}
+
+fieldset {
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 10px 0 2px 0;
+  padding: 12px 10px 12px 10px;
+  background-color: #ffffff;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 9px 7px;
+  border: 1px solid #163020;
+  border-radius: 4px;
+  color: #658147;
+  margin-bottom: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+.residuos {
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 1px;
+}
+
+.residuos label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.formulario-btn {
+  background: #658147;
+  margin-top: 10px;
+  border: 1px solid #163020;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.formulario-btn:hover {
+  background: #163020;
+  cursor: pointer;
+}
+
 /* footer */
 .footer {
   background: #658147;
   color: white;
-  margin-top: 50px;
   padding: 3rem 0;
 }
 

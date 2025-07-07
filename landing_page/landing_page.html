@@ -140,6 +140,7 @@
                 Cadastre-se abaixo como parceiro e ajude a expandir nossa rede
                 de pontos de coleta.
               </p>
+              <button class="action-item-btn">Cadastre-se</button>
             </div>
           </div>
         </div>
@@ -147,8 +148,77 @@
 
       <section id="cadastrar" class="start">
         <div class="container">
+          <button id="cadastrar-btn">X</button>
           <div class="start-content">
-            <span> Colocar aqui o form seja parceiro</span>
+            <form id="formulario">
+              <fieldset>
+                <legend>Dados do parceiro</legend>
+                <label for="nome">Nome do parceiro</label>
+                <input type="text" id="nome" name="nome" required />
+
+                <label for="tipo">Tipo de parceiro</label>
+                <select id="tipo" name="tipo" required>
+                  <option value="">Selecione</option>
+                  <option value="ECO">Ecopontos (ECO)</option>
+                  <option value="COO">Cooperativas (COO)</option>
+                  <option value="PEV">Ponto de Entrega Voluntária (PEV)</option>
+                </select>
+
+                <label for="responsavel">Responsável pelo parceiro</label>
+                <input
+                  type="text"
+                  id="responsavel"
+                  name="responsavel"
+                  required
+                />
+
+                <label for="telefone">Telefone do Responsável</label>
+                <input type="tel" id="telefone" name="telefone" required />
+
+                <label for="email">Email do Responsável</label>
+                <input type="email" id="email" name="email" />
+              </fieldset>
+
+              <fieldset>
+                <legend>Endereço</legend>
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua" required />
+
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero" required />
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required />
+              </fieldset>
+
+              <fieldset>
+                <legend>Tipos de resíduos aceitos</legend>
+                <div class="residuos">
+                  <label><input type="checkbox" id="papel" /> Papel</label>
+                  <label
+                    ><input type="checkbox" id="plastico" /> Plástico</label
+                  >
+                  <label><input type="checkbox" id="vidro" /> Vidro</label>
+                  <label><input type="checkbox" id="metal" /> Metal</label>
+                  <label
+                    ><input type="checkbox" id="oleoCozinha" /> Óleo de
+                    cozinha</label
+                  >
+                  <label
+                    ><input type="checkbox" id="pilhasBaterias" /> Pilhas e
+                    baterias</label
+                  >
+                  <label
+                    ><input type="checkbox" id="eletronico" />
+                    Eletrônicos</label
+                  >
+                  <label><input type="checkbox" id="roupa" /> Roupas</label>
+                  <label><input type="checkbox" id="outros" /> Outros</label>
+                </div>
+              </fieldset>
+
+              <button class="formulario-btn" type="submit">Enviar</button>
+            </form>
           </div>
         </div>
       </section>
